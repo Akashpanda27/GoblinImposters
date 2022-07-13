@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Attack Of Monster";
+    src: local("Attack Of Monster"),
+      url("./fonts/Attack Of Monster.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Dankosaurus";
+    src: local("Dankosaurus"),
+      url("./fonts/Dankosaurus.ttf") format("truetype");
+    font-weight: normal;
+}
