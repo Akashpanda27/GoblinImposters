@@ -2,7 +2,7 @@ import React, { useEffect,useState } from 'react'
 import styled from 'styled-components'
 import Logo from'./Logo'
 import Button from './Button'
-import img1 from '../assets/OpenSea3.svg'
+import img1 from '../assets/opensea.svg'
 import {ethers} from 'ethers'
 import img2 from '../assets/icons8-twitter.svg'
 
@@ -206,6 +206,8 @@ const Navigation = () => {
             <Menu  click={click} >
                 <MenuIteams onClick={()=>scrollTo('home')}> Home</MenuIteams>
                 <MenuIteams onClick={()=>scrollTo('about')}> Story</MenuIteams>
+                <MenuIteams onClick={()=>scrollTo('showcase')}> Gallery</MenuIteams>
+                <MenuIteams onClick={()=>scrollTo('faq')}> Faq</MenuIteams>
                 <MenuIteams> 
                 <a href={"https://twitter.com/GoblinImposters"} target="_blank" rel="noreferrer" >
                 { <img  src={img2} /> }

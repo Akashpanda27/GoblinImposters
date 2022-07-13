@@ -6,21 +6,15 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay, EffectCards } from "swiper";
-import temp from '../assets/temp6.jpg';
-import img1 from '../assets/Nfts/image1.png';
-import img2 from '../assets/Nfts/image2.png';
-import img3 from '../assets/Nfts/image3.png';
-import img4 from '../assets/Nfts/image4.png';
-import img5 from '../assets/Nfts/image5.png';
-import img6 from '../assets/Nfts/image6.png';
-import img7 from '../assets/Nfts/image7.png';
+import img1 from '../assets/Nfts/yellow/image1.png';
+import img2 from '../assets/Nfts/yellow/image2.png';
+import img3 from '../assets/Nfts/yellow/image3.png';
 
 import Arrow from '../assets/Arrow.svg';
 
 const Container=styled.div`
 width:25vw;
-height:60vh;
-
+height:70vh;
 @media (max-width:70em){
     height: 60vh;
 }
@@ -37,17 +31,20 @@ height:60vh;
     height: 50vh;
     width: 60vw;
 }
+
 .swiper{
     width:100%;
     height:100%;
+    
 }
 
 .swiper-slide{
-    background-color:${props=>props.theme.text};
+    background-color:${props=>props.theme.carouselColor};
     border-radius:20px;
     display:flex;
     justify-content:center;
     align-items:center;
+    background-image:url(${img1});
 
     img{
         display:block;
@@ -122,10 +119,6 @@ const Carousel = () => {
         <SwiperSlide><img src={img1} alt="goblin imposters" /> </SwiperSlide>
         <SwiperSlide><img src={img2} alt="goblin imposters" /> </SwiperSlide>
         <SwiperSlide><img src={img3} alt="goblin imposters" /> </SwiperSlide>
-        <SwiperSlide><img src={img4} alt="goblin imposters" /> </SwiperSlide>
-        <SwiperSlide><img src={img5} alt="goblin imposters" /> </SwiperSlide>
-        <SwiperSlide><img src={img6} alt="goblin imposters" /> </SwiperSlide>
-        <SwiperSlide><img src={img7} alt="goblin imposters" /> </SwiperSlide>
       </Swiper>
         </Container>
     )

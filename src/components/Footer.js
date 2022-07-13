@@ -2,15 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Banner from './Banner'
 import Logo from './Logo'
-import Facebook from '../Icons/Facebook'
-import Instagram from '../Icons/Instagram'
 import Twitter from '../Icons/Twitter'
-import LinkedIn from '../Icons/LinkedIn'
+import opensea from '../assets/opensea.svg'
 const Section=styled.section`
 min-height:100vh;
 height:100vh;
 width:100vw;
-background-color:${props=>props.theme.body};
+background-color:${props=>props.theme.white};
 position:relative;
 color:${props=>props.theme.text};
 //display:flex;
@@ -25,7 +23,7 @@ margin: 2rem auto;
 display: flex;
 justify-content:space-between;
 align-items:center;
-
+font-family: "Dankosaurus";
 border-bottom: 1px solid ${props=>props.theme.text};
 
 @media (max-width: 48em){
@@ -96,7 +94,7 @@ margin: 0 auto;
 display: flex;
 justify-content: space-between;
 align-items:center;
-
+font-family: "Dankosaurus";
 @media (max-width: 48em){
     flex-direction: column;
     width: 100%;
@@ -122,34 +120,30 @@ const Footer = () => {
             <Left>
                 <Logo/>
                 <IconList>
-                    <a href="http://facebook.com" target=' blank' rel="noopener">
-                        <Facebook/>
-                    </a>
-                    <a href="http://facebook.com" target=' blank' rel="noopener">
-                        <Instagram/>
-                    </a>
-                    <a href="http://facebook.com" target=' blank' rel="noopener">
+                    <a href="https://twitter.com/GoblinImposters" target=' blank' rel="noopener">
                         <Twitter/>
                     </a>
-                    <a href="http://facebook.com" target=' blank' rel="noopener">
-                        <LinkedIn/>
+                    <a href="https://twitter.com/GoblinImposters" target=' blank' rel="noopener">
+                    <img src={opensea} />
                     </a>
                 </IconList>
             </Left>
             <MenuItems>
                 <Item onClick={()=>scrollTo('navigation')}> Home</Item>
                 <Item onClick={()=>scrollTo('about')}> About</Item>
-                <Item onClick={()=>scrollTo('roadmap')}> Roadmap</Item>
                 <Item onClick={()=>scrollTo('showcase')}> Showcase</Item>
-                <Item onClick={()=>scrollTo('team')}> Team</Item>
                 <Item onClick={()=>scrollTo('faq')}> Faq</Item>
             </MenuItems>
             </Container>
             <Bottom>
                 <span>
-                    &copy; {new Date().getFullYear()} pandas. All rights reserved.
+                    &copy; {new Date().getFullYear()} GoblinImposters. All rights reserved.
                 </span>
+                <span>
+                By Yugaa labs.
+            </span>
             </Bottom>
+            
         </Section>
     )
 }

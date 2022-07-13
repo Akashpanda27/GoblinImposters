@@ -1,6 +1,5 @@
 import React from 'react'
-import img1 from '../assets/Logoimg1.png'
-import GIF3 from '../assets/GIF2.gif'
+import GIF3 from '../assets/Logoimg7.png'
 
 import styled from 'styled-components'
 

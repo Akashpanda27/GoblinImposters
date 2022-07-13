@@ -1,11 +1,12 @@
 export const light={ 
     body:"#EDF5E1",
     text:"#202020",
-    green:"#5CDB95",
+    green:"#AC366E",
     black:"#000000",
     neon:"#FFA500",
     pink:"#FFA1A1",
     blue: "#34B3F1",
+    white: "#E9F7FF",
     palewhite: "#EDF5E1",
     cream:"#D6D5A8",
     orange:"#FF4949",

@@ -1,11 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import img1 from '../assets/Nfts/bighead.svg';
-import img2 from '../assets/Nfts/bighead-1.svg';
-import img3 from '../assets/Nfts/bighead-2.svg';
-import img4 from '../assets/Nfts/bighead-3.svg';
-import img5 from '../assets/Nfts/bighead-4.svg';
+import img1 from '../assets/Nfts/bannerfinal.png';
 
 const Section=styled.section`
 width:100vw;
@@ -13,7 +9,7 @@ height:25rem;
 position:relative;
 border-top: 2px solid ${props=>props.theme.text};
 border-top: 2px solid ${props=>props.theme.text};
-
+font-family: "Dankosaurus";
 background-color: ${props=>`rgba(${props.theme.textRgba},0.9)`};
 display:flex;
 justify-content:center;
@@ -38,13 +34,13 @@ justify-content: center;
 align-items: center;
 opacity:0.2;
 img{
-    width: 15rem;
+    width: 100%;
     height: auto;
 }
 
 @media (max-width: 48em){
     img{
-        width: 10rem;
+        width: 100%;
         height: auto;
     }
 }
@@ -133,17 +129,15 @@ const Banner = () => {
         <Section>
             <ImgContainer>
             <img src={img1} alt="pandas" />
-            <img src={img2} alt="pandas" />
-            <img src={img3} alt="pandas" />
-            <img src={img4} alt="pandas" />
-            <img src={img5} alt="pandas" />
 
             </ImgContainer>
-            <Title> Join the <br /> pandas club</Title>
+            <Title> Join the <br /> Imposters list</Title>
             <BtnContainer>
+            <a href="https://twitter.com/GoblinImposters" target=' blank' rel="noopener">
             <JoiNow>
                 Join Now
             </JoiNow>
+            </a>
             </BtnContainer>
         </Section>
     )
